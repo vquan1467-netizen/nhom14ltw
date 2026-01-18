@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+/* ===== HEADER ===== */
+.header {
+    height: 55px;
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+.menu .bold {
+    font-weight: 700;
+}
+
+.menu .arrow::after {
+    content: "▼";
+    font-size: 9px;
+    color: red;
+    margin-left: 5px;
+}
+
+.search {
+    width: 160px;
+    height: 22px;
+    border: 1px solid #aaa;
+}
+
+/* ===== BANNER ===== */
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+/* ===== SECTION ===== */
+.section {
+    padding: 35px 60px;
+}
+
+.title {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* ===== GRID ===== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+
+.item p {
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* ===== LV ===== */
+.lv img {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.mxk {
+  display: flex;
+  gap: 20px;
+}
+
+.mxk a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-social a:hover img {
+  transform: translateY(-4px) scale(1.1);
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #777;
+}
+/* =========================
+   MENU LINK + ACTIVE
+========================= */
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+}
+
+/* MENU ACTIVE */
+.menu li a.active {
+    font-weight: 700;
+    border-bottom: 2px solid hsl(0, 2%, 12%);
+}
+
+/* HOVER */
+.menu li a:hover {
+    color: #ffffff;
+}
+
+/* MŨI TÊN ĐỎ */
+.menu li a[href="nike.html"]::after,
+.menu li a[href="adidas.html"]::after,
+.menu li a[href="lv.html"]::after {
+    content: "▼";
+    font-size: 9px;
+    color: red;
+    margin-left: 5px;
+}
+/* =========================
+   CÂN BẰNG ẢNH SẢN PHẨM
+========================= */
+
+/* Khung ảnh cố định */
+.item {
+    text-align: center;
+}
+
+/* Tạo khung chuẩn cho ảnh */
+.item img {
+    width: 100%;
+    height: 220px;              /* CHIỀU CAO CỐ ĐỊNH */
+    object-fit: contain;        /* KHÔNG MÉO ẢNH */
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10px;
+}
+/* =========================
+   MENU KHÔNG MŨI TÊN
+========================= */
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+}
+
+/* ACTIVE */
+.menu li a.active {
+    font-weight: 700;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* CHỮ ĐẬM */
+.menu li a.bold {
+    font-weight: 700;
+}
+
+/* HOVER */
+.menu li a:hover {
+    color: #363232;
+}
+
+/* ❌ XOÁ MŨI TÊN (GHI ĐÈ CSS CŨ) */
+.menu li a::after {
+    content: none !important;
+}
